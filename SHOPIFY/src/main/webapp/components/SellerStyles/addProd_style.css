@@ -1,0 +1,116 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Poppins&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    min-height: 100%;
+    background: rgb(9, 121, 119);
+    background: linear-gradient(90deg, rgba(9, 121, 119, 1) 35%, rgba(0, 255, 152, 1) 100%);
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar{
+    width: 95%;
+    height:5vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-family: 'Kode Mono';
+    color:cyan;
+}
+
+.navbar > ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:40%;
+    list-style: none;
+    width:50%;
+    gap:20px;
+}
+
+.navbar h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.navbar > ul >li a{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color:cyan;
+}
+
+.navbar > ul >li a:hover {
+    text-decoration: underline;
+}
+
+.add{
+    width:30vw;
+    height: auto;
+    padding: 15px;
+    background-color: rgb(245, 245, 220,0.5);
+    border: 2px solid whitesmoke;
+    border-radius: 5px 5px 20px 20px;
+	font-family: 'Poppins';
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+}
+
+.add:hover{
+    /* background-color: rgb(245, 245, 220,0.8); */
+    box-shadow: 0px 0px 12px greenyellow;
+    cursor: pointer;
+}
+
+.add > h1{
+	text-transform: uppercase;
+	text-decoration: underline;
+}
+
+.add form{
+    text-align: center;
+}
+
+.add form > *{
+    font-size: 1rem;
+    width: 100%;
+    height: 1.5rem;
+}
+
+.add input{
+    color: ghostwhite;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid greenyellow;
+}
+
+.add select{
+	background-color: cornsilk;
+	opacity: 0.8;
+	border: none;
+	outline: none;
+}
